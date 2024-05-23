@@ -60,14 +60,14 @@ h1 {
 
 .photo {
     float: left;
-    margin-right: 60px;
+    margin-right: 70px;
     shape-outside: circle();
 }
 
 .photo img {
     width: 250px;
     height: 250px;
-    border-radius: 60%;
+    border-radius: 50%;
 }
 
 .text {
