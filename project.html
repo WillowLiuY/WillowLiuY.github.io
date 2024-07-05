@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liu "Willow" Yang - Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Projects - Liu "Willow" Yang</title>
+    <link rel="stylesheet" href="style.css"> <!-- Keep the base styles -->
+    <link rel="stylesheet" href="project-style.css"> <!-- Add the specific styles for the projects page -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,21 +26,32 @@
 
     <main>
         <section id="projects">
-            <h1>Projects</h1>
             <div class="project-list">
                 <div class="project-item">
-                    <h2>Research 1</h2>
-                    <p>Description of research 1...</p>
+                    <h2>Weakly Supervised Segmentation for Indoor Scene Understanding</h2>
+                    <p>In this project, I designed a segmentation network for indoor scenes using only image-level labels - simpler to collect but lacking detailed object locations and sizes. This challenge was addressed by developing a robust approach to semantic segmentation that reduces reliance on expensive pixel-level annotations.</p>
+                    <p><strong>Project Highlights:</strong></p>
+                    <ul>
+                        <li><strong>Weekly Supervised Learning:</strong> This method uses minimalistic image-level labels to outline the presence of object classes within an image. They are easy to gather in large amounts at low-cost, compared to pixel-level annotations that are commonly used in segmentation training. To compensate for the absence of detailed object location and boundaries, prior knowledge from 3D building models are used to guide the network.
+                            <div class="image-container">
+                                <img src="images/paper3-1.png" alt="Annotation Types" class="annotation-image">
+                                <img src="images/paper3-2.png" alt="Framework" class="annotation-image">
+                            </div>
+                        </li>
+                        <li><strong>Deep Convolutional Neural Networks (DCNNs):</strong> The network architecture employed was based on a modified ResNet38, enhanced for both depth and width, using dilated convolutions to expand the receptive field. This adaptation significantly improved performance in segmenting indoor scenes by using spatial information from 3D models.</li>
+                        <li><strong>Class Activation Mapping (CAM):</strong> Employed CAM to generate initial object regions, refined further with edge and size data from 3D models (Building Information Models (BIM) in this project). </li>
+                    </ul>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li><strong>3D-2D Projection:</strong> Applied methods to project 3D objects onto 2D image planes, giving the network essential location cues that greatly enhance segmentation accuracy.</li>
+                        <li><strong>Specialized Loss Function:</strong> Crafted a customized cross-entropy loss function that integrates location priors from 3D models, allowing the network to produce more accurate segmentation masks even with limited supervision.</li>
+                    </ul>
+                    <p>This project exemplifies how combining computer vision and AI can overcome the barriers in creating efficient and accurate segmentation solutions for complex indoor environments, with applications in robotic navigation and automatic scene understanding. If you are interested, our journal article is available here:</p>
+                    <p>Yang, L., & Cai, H. (2023). <a href="https://doi.org/10.1061/JCCEE5.CPENG-5065">Cost-efficient image semantic segmentation for indoor scene understanding using weakly supervised learning and BIM.</a> Journal of Computing in Civil Engineering, 37(2), 04022062</p>
                 </div>
                 <div class="project-item">
-                    <h2>Research 2</h2>
-                    <p>Description of research 2...</p>
+                    <h2>Research2</h2>
                 </div>
-                <div class="project-item">
-                    <h2>Research 3</h2>
-                    <p>Description of research 3...</p>
-                </div>
-                <!-- Add more project items as needed -->
             </div>
         </section>
     </main>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+header {
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.name {
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;  /* Adjusted for clarity */
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;  /* Added for subheadings */
+    margin-top: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;  /* Added for tertiary headings */
+    margin-top: 15px;
+}
+
+.project-item p,
+.project-item ul {
+    font-size: 18px;  /* Base paragraph size */
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;  /* Ensure text is justified */
+}
+
+footer {
+    padding: 20px;
+    text-align: left;
+    color: #555;
+    font-size: 14px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.project-item h2 {
+    text-align: justify;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around; /* This will space out the images more evenly */
+    align-items: center;
+    gap: 50px; /* Maintain some space between images */
+}
+
+.annotation-image {
+    width: 50%; 
+    height: auto; 
+    max-width: 600%; 
+}
+
+.project-item {
+    border-bottom: 1px solid #ccc; /* Light gray border at the bottom */
+    padding-bottom: 20px; /* Space above the border */
+    margin-bottom: 20px; /* Space below the border to next item */
+}
+
+.project-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
