@@ -50,28 +50,28 @@ main {
 
 h1 {
     color: #333;
-    font-size: 36px;  /* Adjusted for clarity */
+    font-size: 36px; 
     text-align: center;
 }
 
 h2 {
     color: #333;
-    font-size: 28px;  /* Added for subheadings */
+    font-size: 28px;
     margin-top: 20px;
 }
 
 h3 {
     color: #333;
-    font-size: 24px;  /* Added for tertiary headings */
+    font-size: 24px; 
     margin-top: 15px;
 }
 
 .project-item p,
 .project-item ul {
-    font-size: 18px;  /* Base paragraph size */
+    font-size: 18px; 
     line-height: 1.8;
     color: #444;
-    text-align: justify;  /* Ensure text is justified */
+    text-align: justify; 
 }
 
 footer {
@@ -89,9 +89,9 @@ footer {
 
 .image-container {
     display: flex;
-    justify-content: space-around; /* This will space out the images more evenly */
+    justify-content: space-around;
     align-items: center;
-    gap: 50px; /* Maintain some space between images */
+    gap: 50px;
 }
 
 .annotation-image {
@@ -101,11 +101,11 @@ footer {
 }
 
 .project-item {
-    border-bottom: 1px solid #ccc; /* Light gray border at the bottom */
-    padding-bottom: 20px; /* Space above the border */
-    margin-bottom: 20px; /* Space below the border to next item */
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
 }
 
 .project-item:last-child {
-    border-bottom: none; /* No border for the last item */
+    border-bottom: none; 
 }
