@@ -27,30 +27,45 @@
     <main>
         <section id="projects">
             <div class="project-list">
-
                 <div class="project-item">
-                    <h2>Unsupervised Video Object Tracking in Highly Dynamic Environments</h2>
-                    <p>Our focus is to improve visual SLAM performance in environments where dynamics like moving or temporarily static objects often cause system failures. We developed a dynamic object tracking system that adapts to new environments without pre-defined object classes. This flexibility is important for applications like autonomous navigation where conditions change rapidly.</p>
+                    <h2>Project 1: Learning-based 3D Localitzation and Tracking with Adaptive Object Segmentation and Semantic Integration for Dynamic Environments</h2>
+                    <p>This project aims to develop a learning-based 3D localization and tracking system in highly dynamic environments. This is achieved by combining adaptive dynamic objects segmentation and semantic scene understanding, building upon my ealier works (see Project 2 & 3 below). This extension focuses on optimizing system responsiveness and accuracy to rapid changes.</p>
                     <p><strong>Project Highlights:</strong></p>
                     <ul>
-                        <div class="image-container">
-                            <img src="images/paper2-1.png" alt="Annotation Types" class="annotation-image">
-                            <img src="images/paper2-2.png" alt="Framework" class="annotation-image">
-                        </div>
-                        <li><strong>Unsupervised Video Object Segmentation:</strong> Our unsupervised method detects and segments dynamic objects on the fly, without relying on pre-defined class labels. This is achieved by combining 'objectness masks' from CNNs and motion saliency between frames. It is proved that our method improves SLAM accuracy in dynamic environments by up to 0.5m.</li>
+                        <img src="images/paper1-1.png" alt="Annotation Types" class="single-image">
+                        <li><strong>Adaptive Dynamic Object Segmentation:</strong> Building on our prior unsupervised video object tracking in project 2, this extended work uses adaptive keyframe selection based on optical flow magnitudes. This method focuses computational resources on frames that are most likely to include major dynamic changes to optimize both efficiency and accuracy.</li>
+                        <li><strong>Comprehensive Semantic Scene Integration:</strong> We've expanded the system’s capability to include a deeper level of scene understanding. By using semantic data from the environment, the system better identifies and uses stable features for pose estimation.
+                        </li>
+                    </ul>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li><strong>Continuous Adaptation in High Variabilities:</strong> The system continuously updates its understanding of the scene and adjusts to new objects and alterations, thus allows consistent performance under unpredictable conditions.</li>
+                        <li><strong>Easy Integration with Existing Frameworks:</strong> Our developments allow for easy integration into existing localization and tracking pipelines to boost efficacy in complex and dynamic environments.</li>
+                    </ul>
+                    <p>This project tackles major challenges like quick environmental shifts and inconsistent object detection, which many industries face. With improved accuracy and adaptability, our system supports applications in sectors like meditech, robotics, where precise and real-time scene analysis is important. If you are interested, our journal article is available here:</p>
+                    <p>Yang, L., & Cai, H. (2024). <a href="https://doi.org/10.1016/j.aei.2023.102313"> Enhanced visual SLAM for construction robots by efficient integration of dynamic object segmentation and scene semantics.</a> Advanced Engineering Informatics, 59, 102313.</p>
+                </div>
+
+                <div class="project-item">
+                    <h2>Project 2: Unsupervised Video Object Tracking in Highly Dynamic Environments</h2>
+                    <p>Our focus is to improve learning-based localization and tracking performance in environments where dynamics like moving or temporarily static objects often cause system failures. We developed a dynamic object tracking system that adapts to new environments without pre-defined object classes. This flexibility is important for applications like autonomous navigation where conditions change rapidly.</p>
+                    <p><strong>Project Highlights:</strong></p>
+                    <ul>
+                            <img src="images/paper2-1.png" alt="Annotation Types" class="single-image">
+                        <li><strong>Unsupervised Video Object Segmentation:</strong> Our unsupervised method detects and segments dynamic objects on the fly, without relying on pre-defined class labels. This is achieved by combining 'objectness masks' from CNNs and motion saliency between frames. It is proved that our method improves localization accuracy in dynamic environments by up to 0.5m.</li>
                         <li><strong>Bi-directional Mask Propagation:</strong> We further improved the accuracy by using forward and backward motion analysis to maintain consistency across sequences.</li>
                     </ul>
                     <p><strong>Key Features:</strong></p>
                     <ul>
                         <li><strong>Real-time in Action:</strong> Our system continuously adjusts to new objects and changes to ensure dependable performance in unpredictable environments.</li>
-                        <li><strong>Better SLAM Integration:</strong> By integrating our unsupervised tracking with existing SLAM systems, we significantly boost localization and mapping accuracy—key for autonomous systems.</li>
+                        <li><strong>Better SLAM Integration:</strong> By integrating our unsupervised tracking with existing SLAM systems, we greatly boost localization and mapping accuracy.</li>
                     </ul>
-                    <p>This project supports applications in autonomous vehicles, robotics, and security by enabling better navigation and object tracking in environments with frequent, unpredictable changes. It helps overcome challenges like object misclassification and tracking inaccuracies that are common with existing SLAM technologies. If you are interested, our journal article is available here:</p>
+                    <p>This project supports applications in autonomous vehicles, robotics, and security by enabling better navigation and object tracking in environments with frequent, unpredictable changes. It helps overcome challenges like object misclassification and tracking inaccuracies that are common with existing 3D localization and tracking solutions. If you are interested, our journal article is available here:</p>
                     <p>Yang, L., & Cai, H. (2024). <a href="https://doi.org/10.1016/j.autcon.2023.105235">Unsupervised video object segmentation for enhanced SLAM-based localization in dynamic construction environments.</a> Automation in Construction, 158, 105235.</p>
                 </div>
 
                 <div class="project-item">
-                    <h2>Weakly Supervised Segmentation for Indoor Scene Understanding</h2>
+                    <h2>Project 3: Weakly Supervised Segmentation for Indoor Scene Understanding</h2>
                     <p>In this project, I designed a segmentation network for indoor scenes using only image-level labels - simpler to collect but lacking detailed object locations and sizes. This challenge was addressed by developing a robust approach to semantic segmentation that reduces reliance on expensive pixel-level annotations.</p>
                     <p><strong>Project Highlights:</strong></p>
                     <ul>
